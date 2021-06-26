@@ -1,0 +1,304 @@
+html {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  color: #26292c;
+  font-family: Source Sans Pro,sans-serif;
+  font-weight: 500;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5em;
+  margin: 0;
+}
+
+
+
+*,
+*:after,
+*::before {
+  box-sizing: inherit;
+}
+
+
+/*
+=================================================================================================
+    Header
+=================================================================================================
+*/
+.header a{
+  color: black;
+}
+.header a:hover{
+  color: black;
+  text-decoration: underline #026E08;
+}
+
+.header a:active{
+  color: black;
+  text-decoration: underline #026E08;
+}
+
+
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(245, 245, 245);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidebar a:hover {
+  color: #080808;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 36px;
+  
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  
+  color: rgb(12, 12, 12);
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  color:#026E08;
+}
+
+#main {
+  
+  padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px */
+@media screen and (max-width: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+  .rest{display: none !important;}
+  .img-col{display: none !important;}
+  .search-courses-div{width: 100% !important; }
+  .signup-box{
+    width: 100% !important;
+    height: auto !important;
+    padding: 100px 20px 100px 20px !important;
+  }
+  .email-box{width: 100% !important;}
+  .courses-nav{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+}
+
+/* On tablets and medium screens*/
+@media screen and (max-width: 775px) {
+  
+  .search-courses-div{width: 100% !important; }
+  .signup-box{
+    width: 100% !important;
+    height: auto !important;
+    padding: 100px 20px 100px 20px !important;
+  }
+  .email-box{width: 100% !important;}
+  .courses-nav{
+    display: flex;
+    flex-direction: column;
+  }
+  
+
+}
+
+
+
+
+/*
+=================================================================================================
+  KudiGO Academy
+=================================================================================================
+
+*/
+.kudigo-academy{
+ 
+  margin-top: 100px;
+}
+
+.search-courses-div{
+  width: 70%;
+}
+
+.featured-videos{
+  margin-bottom: 50px;
+} 
+
+.featured-videos-col1:hover{
+ background-color: rgba(211,211,211,0.8);
+  
+}
+#search-bar{
+  border: none;
+  padding: 10px;
+}
+
+/*
+=================================================================================================
+  Courses
+=================================================================================================
+
+*/
+
+
+
+.courses-nav{
+ background-color: rgb(238, 236, 236);
+}
+
+.courses-nav a{
+  text-decoration: none;
+  color: rgb(70, 69, 69);
+}
+
+.courses-nav a:hover{
+  text-decoration: underline;
+ 
+}
+.courses{
+  margin-top: 20px;
+
+}
+.course-col{
+ max-width: 600px;
+  display:inline-block;
+  flex-direction:initial;
+  align-content: center;
+}
+.course-row{
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+.course-row:hover{
+  background-color:rgba(63, 62, 62, 0.034);
+}
+
+
+.video-div{
+ padding: 20px;
+ margin-bottom: 20px;
+}
+.btn-div{
+  padding: 10px;
+}
+.stc-btn{
+  border: none;
+  border-radius: 7px;
+  background-color: #026E08;
+  color: white;
+  font-size: large;
+  height: 55px;
+  width: 90%;
+  cursor: pointer;
+
+}
+.stc-btn:hover{
+  background-color: #00BE0A;
+}
+
+.courses-col{
+  margin-bottom: 200px;
+}
+.hor{
+  width: 100%;
+  color: white;
+  border: 1px solid white;
+  
+}
+
+
+a{
+  text-decoration: none;
+}
+
+.course-div{
+  margin: 50px auto 50px auto;
+}
+.course-div a{
+  color: black;
+}
+
+
+.course-div:hover a{
+  color: black;
+}
+
+
+.course-div:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+.featured-videos-cols{
+  height: 600px;
+}
+.featured-videos-cols:hover{
+  background-color: rgb(240, 240, 240);;
+}
+
+.featured-videos-cols a{
+  color: black;
+}
+
+.featured-videos-cols:hover a{
+  color: black;
+}
+
+.signup-box{
+  width: 60%;
+  height: 500px;
+  padding-top: 100px;
+}
+
+.sign-up-div a{
+  color: #b3b3b3;
+}
+
+.btn-sign-up{
+  background-color: #026E08;
+  color: white;
+
+}
+
+.btn-sign-up:hover{
+  background-color: rgb(79, 214, 79);
+
+}
+
+.footer-div a{
+  color: rgb(119, 117, 117);
+  font-size: 18px;
+}
+i{
+  color: #818181;
+}
+i:hover{
+  color: #a8a8a8;
+}
