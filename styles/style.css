@@ -33,9 +33,9 @@ body {
   text-decoration: underline #026E08;
 }
 
-.header a:active{
-  color: black;
-  text-decoration: underline #026E08;
+.header a.active{
+  color: black !important;
+  text-decoration: underline #026E08 !important;
 }
 
 
