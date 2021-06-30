@@ -26,9 +26,15 @@ body {
     Header
 =================================================================================================
 */
+  .nav-bar{
+    padding-right: 3rem;
+    padding-left: 3rem;
+
+}
 .header a{
   color: black;
 }
+
 .header a:hover{
   color: black;
   text-decoration: underline #026E08;
@@ -109,7 +115,15 @@ body {
     display: flex;
     flex-direction: column;
   }
-  
+  .nav-bar{
+    padding-right: 0rem;
+    padding-left: 0rem;
+    
+}
+.main-content{
+  padding-left: 0rem !important;
+  padding-right: 0rem !important;
+}
 
 }
 
@@ -140,6 +154,10 @@ body {
 =================================================================================================
 
 */
+.main-content{
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
 .kudigo-academy{
  
   margin-top: 100px;
@@ -147,6 +165,7 @@ body {
 
 .search-courses-div{
   width: 70%;
+  
 }
 
 .featured-videos{
