@@ -238,6 +238,7 @@ body {
   height: 55px;
   width: 90%;
   cursor: pointer;
+ 
 
 }
 .stc-btn:hover{
@@ -304,6 +305,8 @@ a{
 .btn-sign-up{
   background-color: #026E08;
   color: white;
+  margin-left: 0px !important;
+  
 
 }
 
