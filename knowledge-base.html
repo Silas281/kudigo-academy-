@@ -1,10 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <script src="https://static.freshdev.io/fdk/2.0/assets/fresh_client.js"></script>
-  <script src="scripts/app.js"></script>
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="icon" href="favicon1.png" type="image/icon type">
@@ -35,23 +34,23 @@
         <a href="#">Blogs</a>
         <a href="knowledge-base.html">Knowledge Base</a>
         <a href="index.html">Academy</a>
-        <a href="#">Community</a>
+        <a href="community.html">Community</a>
       </div>
 
 
-      <span class="openbtn navbar-toggler-icon" onclick="openNav()"></span>
+      <span class="openbtn navbar-toggler-icon ms-2" onclick="openNav()"></span>
 
 
 
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="support-center.html">
         <img src="dark-green.png" alt="" width="80" height="auto"><span class="fw-bold"
           style="color: #026E08; font-size: small;">HELP CENTER</span>
 
       </a>
 
       <a class="rest" href="knowledge-base.html">Knowledge Base</a>
-      <a class="rest" href="#">Academy</a>
-      <a class="rest" href="#">Community</a>
+      <a class="rest" href="index.html">Academy</a>
+      <a class="rest" href="community.html">Community</a>
 
 
       <ul class="navbar-nav">
@@ -72,20 +71,10 @@
 
     </div>
   </nav>
-  <br><br><br>
-  <nav class="navbar navbar-light bg-light nav-bar">
-    <div class="container-fluid">
-      <a href="index.html" class="navbar-brand fs-6 fw-bold">≪ Back to All Courses</a>
-    </div>
-  </nav>
-  <!--Course Content-->
-
   <br><br>
   <div class="main-content">
-    
    
   </div>
-
   <!--Sign Up form-->
   <div class="container-fluid-sm bg-dark text-center sign-up-div">
     <div class="container-sm  text-white signup-box">
@@ -94,8 +83,8 @@
         <div class="col-sm-9 email-box pe-0">
           <input class="form-control form-control-lg text-center mt-3" type="text" placeholder="Email Address">
         </div>
-        <div class="col-sm ps-0">
-          <button class="btn text-white btn-lg btn-sign-up mt-3">Get Access</button>
+        <div class="col-sm ps-0 ms-0">
+          <button class="btn text-white btn-lg btn-sign-up mt-3 ms-0">Get Access</button>
         </div>
       </div>
       <p class="mt-3">Or <a href="#"> sign up with Google</a></p>
@@ -137,11 +126,11 @@
       <div class="col-sm">
         <h5 class="ps-3 fw-bold">HELP CENTER</h5>
         <nav class="nav flex-column">
-          <a class="nav-link" href="#">Home</a>
-          <a class="nav-link" href="#">Community</a>
-          <a class="nav-link" href="#">Knowledge Base</a>
-          <a class="nav-link" href="#">Academy</a>
-          <a class="nav-link" href="#">support</a>
+          <a class="nav-link" href="knowledge-base.html">Home</a>
+          <a class="nav-link" href="community.html">Community</a>
+          <a class="nav-link" href="knowledge-base.html">Knowledge Base</a>
+          <a class="nav-link" href="index.html">Academy</a>
+          <a class="nav-link" href="support-center.html">support</a>
 
         </nav>
       </div>
@@ -149,7 +138,7 @@
         <h5 class="ps-3 fw-bold">DISCOVER</h5>
         <nav class="nav flex-column">
           <a class="nav-link" href="#">Covid-19 Resources</a>
-          <a class="nav-link" href="#">Parner programs</a>
+          <a class="nav-link" href="#">Partner programs</a>
           <a class="nav-link" href="#">Sales Pipeline course</a>
           <a class="nav-link" href="#">What is CRM?</a>
           <a class="nav-link" href="#">Resources</a>
@@ -185,15 +174,17 @@
       </div>
       <div class="col-sm me-4">
         <div class=" d-flex d-flex justify-content-end pe-2 me-5">
-          <i class="bi bi-twitter" style="font-size: 2.3rem; margin-left: 20px;"></i>
-          <i class="bi bi-facebook" style="font-size: 2.3rem;  margin-left: 20px;"></i>
-          <i class="bi bi-linkedin" style="font-size: 2.3rem;  margin-left: 20px;"></i>
+          <a href="https://twitter.com/kudigoinc" target="_blank"><i class="bi bi-twitter" style="font-size: 2.3rem; margin-left: 20px;"></i></a>
+          <a href="https://www.instagram.com/kudigoinc/" target="_blank"><i class="bi bi-instagram" style="font-size: 2.3rem;  margin-left: 20px;"></i></a>
+          <a href="https://www.linkedin.com/company/kudigo/" target="_blank"><i class="bi bi-linkedin"
+              style="font-size: 2.3rem;  margin-left: 20px;"></i></a>
         </div>
 
         <p class="ms-4 ps-5" style="color: rgba(96, 98, 100,0.4);">KudiGo is a retail solution engine</p>
       </div>
     </div>
   </div>
+
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
@@ -204,5 +195,6 @@
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
 </body>
+<script src="scripts/app.js"></script>
 
 </html>
