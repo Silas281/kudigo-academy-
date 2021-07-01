@@ -4,7 +4,7 @@ html {
 body {
   font-family: 'Montserrat', sans-serif;
   color: #26292c;
-  font-family: Source Sans Pro,sans-serif;
+  
   font-weight: 500 !important;
   font-size: 16px !important;
   -webkit-font-smoothing: antialiased;
@@ -277,7 +277,7 @@ a{
 }
 
 .featured-videos-cols{
-  height: 600px;
+  height: auto;
 }
 .featured-videos-cols:hover{
   background-color: rgb(240, 240, 240);;
