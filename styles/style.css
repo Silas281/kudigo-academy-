@@ -46,6 +46,10 @@ body {
 }
 
 
+.dropdown1:hover .dropdown-menu1 {
+  display: block;
+}
+
 .sidebar {
   height: 100%;
   width: 0;
