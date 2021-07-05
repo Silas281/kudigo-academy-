@@ -108,7 +108,11 @@ body {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
   .rest{display: none !important;}
-  .img-col{padding-bottom: 20px; padding-left: 0px; margin: 0px 0px 0px 0px;}
+  .img-col{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 0px; padding-right: 120px;
+  }
   .search-courses-div{width: 100% !important; }
   .signup-box{
     width: 100% !important;
