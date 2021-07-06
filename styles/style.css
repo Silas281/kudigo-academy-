@@ -134,6 +134,16 @@ body {
   padding-right: 0rem !important;
 }
 
+.course-vid{
+  width: 100%;
+  justify-content: center !important;
+ 
+}
+.iframe-c{
+  width: 100% !important;
+  height: 200px !important;
+}
+
 }
 
 /* On tablets and medium screens*/
@@ -349,3 +359,4 @@ i:hover{
   background-image: url("Green_literature.jpg") !important;
   background-repeat: no-repeat;
 }
+
