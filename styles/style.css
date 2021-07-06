@@ -144,6 +144,9 @@ body {
   height: 200px !important;
 }
 
+.featured-videos-cols h5{
+  margin-top: 10px !important;
+}
 }
 
 /* On tablets and medium screens*/
