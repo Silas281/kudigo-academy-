@@ -139,7 +139,7 @@ body {
   justify-content: center !important;
  
 }
-.iframe-c{
+.course-vid iframe{
   width: 100% !important;
   height: 200px !important;
 }
@@ -207,6 +207,11 @@ body {
   margin-top: 100px;
 }
 
+.welcome-div{
+  font-size: 20px; 
+  line-height: 1.8;
+}
+
 .search-courses-div{
   width: 70%;
   
@@ -216,9 +221,21 @@ body {
   margin-bottom: 50px;
 } 
 
+.featured-videos-head{
+  text-align: center; 
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+
 .featured-videos-col1:hover{
  background-color: rgba(211,211,211,0.8);
   
+}
+
+.featured-videos-cols iframe{
+  width:100%;
+  height:300px;
+
 }
 #search-bar{
   border: none;
@@ -372,20 +389,15 @@ i:hover{
 
 /*
 =================================================================================================
-  Knowledge Base
+  Footer
 =================================================================================================
 */
-
-.search-main-div{
-  padding: 50px 20px 20px 20px;
-  height: 300px;
-  background-color: #00BE0A;
-  background-image: url("Green_literature.jpg") !important;
-  background-repeat: no-repeat;
+.social-media-icons-div i{
+  font-size: 2.3rem; 
+  margin-left: 20px;
 }
 
 .retail-eng{
-  padding-right: 5px;
   color: rgba(96, 98, 100,0.4);
   text-align: end;
   
