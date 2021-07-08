@@ -29,8 +29,8 @@ body {
   .nav-bar{
     padding-right: 3rem;
     padding-left: 3rem;
-
 }
+
 .header a{
   color: black;
 }
@@ -45,6 +45,16 @@ body {
   text-decoration: underline #026E08 !important;
 }
 
+.logo-container img{
+  width: 100px;
+  height: auto;
+}
+
+.logo-container .rest{
+ margin-left: 0px;
+ color: #026E08; 
+ font-size: small;
+}
 
 .dropdown1:hover .dropdown-menu1 {
   display: block;
@@ -180,6 +190,7 @@ body {
   
 
 }
+/*Large screens*/
 @media screen and (min-width: 775px){
   .footer-div{
     padding-left: 37px;
@@ -227,6 +238,7 @@ body {
   text-align: center; 
   margin-top: 100px;
   margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .featured-videos-col1:hover{
