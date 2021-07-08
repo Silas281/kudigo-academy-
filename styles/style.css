@@ -402,3 +402,27 @@ i:hover{
   text-align: end;
   
   }
+
+/*
+=================================================================================================
+  Course Details
+=================================================================================================
+*/
+.course-overview-ul{
+  list-style: none;
+}
+
+.course-overview-ul li i{
+  color: #00BE0A; 
+  margin-right: 10px;
+}
+
+.share-course-div a{
+  margin-left: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.course-videos-div div a{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
