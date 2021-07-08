@@ -158,7 +158,9 @@ body {
   padding-left: 10px;
   margin-bottom: 20px;
 }
-
+.autoplay-div{
+  justify-content: start !important;
+}
 }
 
 /* On tablets and medium screens*/
@@ -421,6 +423,7 @@ i:hover{
   margin-left: 0.5rem;
   font-size: 1.5rem;
 }
+
 
 .course-videos-div div a{
   padding-top: 1.5rem;
