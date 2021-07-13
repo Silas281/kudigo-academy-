@@ -462,3 +462,88 @@ i:hover{
 .course-details-div{
   padding: 10px 5px 10px 0px;
 }
+
+
+/*
+==============================================================================================================
+Knowledge Base
+==============================================================================================================
+*/
+
+.opendiv{
+  background-color:#026E08;
+  height: 350px;
+  width: 100%;
+  display:flex;
+  flex-wrap:nowrap;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 20px 40px;
+}
+
+.opendiv h1{
+  color: white;
+  font-size: 56px;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.opendiv input{
+  color: white;
+  height: 56px;
+  width: 55%;
+  padding: 13px 20px 13px 40px;
+  border:none;
+  border-bottom: 2px solid #818181;
+}
+
+.content .card{
+  height: 400px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: none;
+}
+.card-title{
+  font-weight: bold;
+}
+
+.FAQs-div h1{
+  font-size: 24px;
+  font-weight: bold;
+}
+.FAQs-div ul{
+ list-style: none;
+ padding-left:0px ;
+ 
+}
+.FAQs-div ul li{
+  color: black;
+  padding-bottom: 1rem; 
+  font-size: 20px;
+  opacity: 0.8;
+ }
+ .FAQs-div ul li:hover{
+  text-decoration: underline black;
+ }
+
+ .FAQs-div ul li a{
+  color: black;
+ }
+
+.content .card:hover{
+  background-color: rgb(240, 240, 240);
+}
+
+@media screen and (max-width:450px) {
+  .opendiv input{
+    width: 90% !important;
+  }
+  .opendiv h1{
+    font-size: 35px;
+    margin-bottom: 0.5rem;
+  }
+  .opendiv{
+    height: 268px;
+  }
+}
