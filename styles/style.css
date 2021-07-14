@@ -318,7 +318,6 @@ padding-left: 20px;
 }
 .stc-btn{
   border: none;
-  border-radius: 7px;
   background-color: #026E08;
   color: white;
   font-size: large;
@@ -472,6 +471,9 @@ Knowledge Base
 
 .opendiv{
   background-color:#026E08;
+  background-image: url("../styles/images/bg1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 350px;
   width: 100%;
   display:flex;
@@ -480,6 +482,7 @@ Knowledge Base
   justify-content: center;
   align-items: center;
   padding: 20px 20px 40px;
+  margin-bottom: 3rem;
 }
 
 .opendiv h1{
@@ -490,7 +493,6 @@ Knowledge Base
 }
 
 .opendiv input{
-  color: white;
   height: 56px;
   width: 55%;
   padding: 13px 20px 13px 40px;
@@ -499,10 +501,18 @@ Knowledge Base
 }
 
 .content .card{
+  display: flex;
   height: 400px;
   margin-bottom: 20px;
   text-align: center;
   border: none;
+  padding: 10px;
+}
+
+.card-img-top{
+  width:80%;
+  height: 40%;
+  align-self: center;
 }
 .card-title{
   font-weight: bold;
@@ -545,5 +555,10 @@ Knowledge Base
   }
   .opendiv{
     height: 268px;
+  }
+  .card-img-top{
+    width:100%;
+    height: 50%;
+    align-self: center;
   }
 }
