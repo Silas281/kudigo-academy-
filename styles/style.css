@@ -568,3 +568,39 @@ Knowledge Base
     align-self: center;
   }
 }
+
+/*
+==============================================================================================================
+Solutions
+==============================================================================================================
+*/
+.solution-content h1{
+  font-weight: bold;
+}
+.solution-content .row .col-sm{
+  margin-top: 50px;
+  color: black;
+}
+.solution-content .row .col-sm ul li a{
+padding-left: 0px;
+margin-left: 0px;
+}
+.solution-content a{
+  color: black;
+}
+.solution-content :visited{
+  color: black !important;
+}
+
+.solution-content .row .col-sm a:hover{
+  text-decoration: underline black;
+}
+
+
+@media screen and (max-width:450px) {
+  .solution-content .row .col-sm{
+    width: 100%;
+    padding: 0px;
+   
+  }
+}
