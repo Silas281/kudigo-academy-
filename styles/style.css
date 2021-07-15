@@ -570,6 +570,27 @@ Knowledge Base
   }
 }
 
+.btn-sign-up-kb{
+  background-color: #026E08;
+  color: white;
+  margin-left: 0px !important;
+  border-radius: 0px;
+  
+
+}
+
+.btn-sign-up-kb:hover{
+  background-color: rgb(79, 214, 79);
+
+}
+
+.signup-box-kb{
+  width: 60%;
+  height: 300px;
+  padding-top: 100px;
+}
+
+
 /*
 ==============================================================================================================
 Solutions
