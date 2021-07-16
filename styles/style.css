@@ -530,9 +530,10 @@ Knowledge Base
  color: black;
 }
 
+
 .card-img-top{
-  width:80%;
-  height: 40%;
+  width:150px;
+  height: 150px;
   align-self: center;
 }
 .card-title{
