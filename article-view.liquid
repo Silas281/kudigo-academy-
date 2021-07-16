@@ -1,0 +1,105 @@
+<div class="flex-container">
+  
+  <section class="page--article-content flex-container flex-1" id="article-show-{{ article.id }}">
+      <div class="breadcrumb">
+        <a href="{{ portal.solutions_home_url }}"> {% translate portal.solutions_home %} </a>
+        <a href="{{ article.category.url }}">{{ article.category.name | h}}</a>
+        <a href="{{ article.folder.url }}">{{ article.folder.name | h}}</a>
+      </div>
+
+      <!-- <b class="page-stamp page-stamp-article">
+        <b class="icon-page-article"></b>
+      </b> -->
+
+      <h2 class="article-heading">{{ article.title | h}}</h2>
+
+      {% if article.personalized_articles? %}
+        <h5 class="article__author article-meta-data">
+          {% translate portal.article.created_by %} {{ article.author }}
+        </h5> 
+      {% endif %}
+      
+      <h5 class="article__modified-date article-meta-data">
+        {% translate portal.article.modified_on %} {{ article.modified_on | short_day_with_time }}
+      </h5>
+
+      {% for tag in article.tags %}
+         {% if tag.name contains 'starter' or tag.name contains 'essentials' or tag.name contains 'business' or tag.name contains 'advanced' %}
+            {% assign show_plans = true %}
+         {% endif %}
+         {% case tag.name %}
+           {% when 'starter' %}
+                {% assign in_starter = true %}
+           {% when 'essentials' %}
+                {% assign in_essentials = true %}
+           {% when 'business' %}
+                {% assign in_business = true %}
+           {% when 'advanced' %}
+                {% assign in_advanced = true %}
+         {% endcase %}  
+      {% endfor %}
+      
+      {% if show_plans %}
+        <div class="well plans-well for-not-mobile">
+          <span class="plans-title">Applicable plans</span>
+          <span class="{% if in_starter %} label-selected {% endif %} label ">Starter</span>
+          <span class="{% if in_essentials %} label-selected {% endif %} label ">Essentials</span>
+          <span class="{% if in_business %} label-selected {% endif %} label ">Business</span>
+          <span class="{% if in_advanced %} label-selected {% endif %} label ">Advanced</span>       
+        </div>
+      {% endif %}
+
+      {% comment %}
+      <div class="article__tags">
+        {% for tag in article.tags %}
+          <span class="label label-info">{{tag.name | h}}</span>
+        {% endfor %}
+      </div>
+      {% endcomment %}
+
+      <article class="article__body" id="article-body" rel="image-enlarge">
+        {{ article.body }}
+
+        {% if article.id == 223686 %}   
+          <div class="article__body--zapier-info">
+            <script src="https://zapier.com/zapbook/embed/widget.js?services=thinkific&container=true&limit=5,"></script>
+              <h2>Related Articles</h2>   
+              <p>
+                <a href="http://help.thinkific.com/support/solutions/articles/218475-integrate-with-zapier-and-automate-your-business" target="_blank">
+                  Integrate with Zapier
+                </a>
+              </p> 
+              <div class="article__body--zapier-info-inside">    
+                <img class="fr-draggable fr-dii" 
+                      src="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/30710313/original/GNDip_g2dBrZuA97L7ygnahjoGciWix-NQ.png?1481156789" 
+                      data-attachment_id="30710313" 
+                      data-title="GNDip_g2dBrZuA97L7ygnahjoGciWix-NQ.png" 
+                      data-image="https://s3.amazonaws.com/cdn.freshdesk.com/data/helpdesk/attachments/production/30710313/original/GNDip_g2dBrZuA97L7ygnahjoGciWix-NQ.png?1481156789" 
+                      style="width: 100px; height: auto;"> 
+                <br>
+                <p>
+                  Got something you’re trying to achieve and not sure if Zapier is the 
+                  solution? Or having issues with setting up a Zap? Our Customer Success 
+                  team is on hand to give you advice and tips. 
+                  Reach them 
+                  <a href="http://help.thinkific.com/support/tickets/new" target="_blank">
+                    here
+                  </a>.
+                </p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      </article>
+
+      {{article | article_attachments}}
+      {{article | article_voting }}
+
+  </section>
+
+  <section class="site-sidebar sidebar--more-articles">
+    {{ article.folder | more_articles_in_folder }}
+    {{ article.folder | article_list: 10, article }}
+  </section>
+
+</div>
