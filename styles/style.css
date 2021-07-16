@@ -492,10 +492,6 @@ Knowledge Base
 */
 
 .opendiv{
-  /*background-color:#026E08;
-  background-image: url("../styles/images/knowledgebase_bg.png");*/
-  background-repeat: no-repeat;
-  background-size: cover;
   height: 350px;
   width: 100%;
   display:flex;
