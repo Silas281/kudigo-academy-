@@ -492,8 +492,8 @@ Knowledge Base
 */
 
 .opendiv{
-  background-color:#026E08;
-  background-image: url("../styles/images/bg1.png");
+  /*background-color:#026E08;
+  background-image: url("../styles/images/knowledgebase_bg.png");*/
   background-repeat: no-repeat;
   background-size: cover;
   height: 350px;
@@ -507,11 +507,18 @@ Knowledge Base
   margin-bottom: 3rem;
 }
 
+.opendiv img{
+  width: 100%;
+  position: absolute;
+  z-index: 0;
+}
+
 .opendiv h1{
   color: white;
   font-size: 56px;
   align-items: center;
   margin-bottom: 2rem;
+  z-index: 1;
 }
 
 .opendiv input{
@@ -520,6 +527,7 @@ Knowledge Base
   padding: 13px 20px 13px 40px;
   border:none;
   border-bottom: 2px solid #818181;
+  z-index: 1;
 }
 
 .content .card{
