@@ -1,3 +1,4 @@
+/****************BODY CONTENT**************/
 html {
   box-sizing: border-box;
 }
@@ -25,11 +26,16 @@ body {
     Header
 =================================================================================================
 */
-  .nav-bar{
+.nav-bar{
     padding-right: 2.5rem;
     padding-left: 2.1rem;
     box-shadow: 0px 0px 4px grey;
     height: 88px;
+}
+
+.nav-bar .try-kudigo-div{
+  display: flex;
+  flex-direction: row;
 }
 
 .go-back-nav-bar{
@@ -112,7 +118,7 @@ body {
   color:#026E08;
 }
 
-/* On smaller screens, where height is less than 450px */
+/*********************ON SMALLER SCREENS, MINI WIDTH 450px ***********************/
 @media screen and (max-width: 450px) {
   .sidebar {padding-top: 15px;}
   .sidebar a {font-size: 18px;}
@@ -184,7 +190,7 @@ body {
 }
 }
 
-/* On tablets and medium screens*/
+/********************** ON TABLETS AND MEDIUM SCREENS**********************************/
 @media screen and (max-width: 775px) {
   
   .search-courses-div{width: 100% !important; }
@@ -201,7 +207,7 @@ body {
   
 
 }
-/*Large screens*/
+/*************LARGE SCREENS (>775 AND <910px*********************/
 @media screen and (min-width: 775px){
   .footer-div{
     padding-left: 35px;
@@ -214,33 +220,29 @@ body {
   .welcome-div{
     padding-left: 0px;
   }
+ 
 }
 
+/**************************MINI WIDTH 910px*******************************************/
 @media screen and (min-width: 910px){
-  .main-content{
-    padding-left: 10rem !important;
-    padding-right: 10rem !important;
-  }
-.nav-bar{
-  padding-left: 9rem !important;
-  padding-right: 9rem !important;
-
-}
 
 .middle-nav-bar{
-  margin-left: 10rem !important;
-  margin-right: 10rem !important;
+  margin-left: 3rem !important;
+  margin-right: 3rem !important;
   padding-left: 0rem !important;
   padding-right: 0rem !important;
 }
 
-.go-back-nav-bar{
-  margin-left: 10rem;
-  margin-left: 10rem;
-  padding-left: 0px;
+.logo-container img{
+  width: 150px;
+  height: auto;
 }
-.footer-div{
-  padding: 8rem !important;
+.bi-globe{
+  font-size: 20px;
+}
+
+.dropdown1{
+  margin-right: 20px;
 }
 }
 
@@ -279,11 +281,6 @@ body {
 }
 
 
-.featured-videos-cols h5{
-  margin-top: 10px;
-   
- }
-
 .featured-videos-cols iframe{
   width:100% !important;
   height:300px !important;
@@ -295,6 +292,23 @@ body {
   height:300px !important;
 
 }
+
+.featured-videos-cols:hover{
+  background-color: rgb(240, 240, 240);;
+}
+
+.featured-videos-cols a{
+  color: black;
+}
+
+.featured-videos-cols h5{
+  margin-top: 10px;
+}
+
+.featured-videos-cols:hover a{
+  color: black;
+}
+
 #search-bar{
   border: none;
   padding: 10px;
@@ -411,21 +425,11 @@ a{
 }
 
 
-.featured-videos-cols:hover{
-  background-color: rgb(240, 240, 240);;
-}
-
-.featured-videos-cols a{
-  color: black;
-}
-
-.featured-videos-cols h5{
-  margin-top: 10px;
-}
-
-.featured-videos-cols:hover a{
-  color: black;
-}
+/*
+=================================================================================================
+  Footer
+=================================================================================================
+*/
 
 .signup-box{
   width: 60%;
@@ -454,6 +458,7 @@ a{
   color: rgb(119, 117, 117);
   font-size: 18px;
 }
+
 i{
   color: #818181;
 }
@@ -461,11 +466,6 @@ i:hover{
   color: #a8a8a8;
 }
 
-/*
-=================================================================================================
-  Footer
-=================================================================================================
-*/
 .social-media-icons-div i{
   font-size: 1.5rem; 
   margin-left: 20px;
@@ -512,6 +512,7 @@ i:hover{
 }
 
 
+
 /*
 ==============================================================================================================
 Knowledge Base
@@ -519,6 +520,10 @@ Knowledge Base
 */
 
 .opendiv{
+  background-image: url(https://previews.dropbox.com/p/thumb/ABOUgiKh5x_b86mUI0DJmIFq_LddRlpb54DB0YGTDRiTRqPwZwvbMHYj43lVucXwQ1xJm3ig2i1p8GqMAi2fd-47Ei5y-Lc7uoPb5J3o1WmdNqLqACkbFrAliSezzbiSy9NZcN2VflDAxkR0iWRdUgH05tDIuA6-iI_fxCdoenGqtI5m_ny5bQ5G_Unkz2JFpTIBYqos81d8pHiu2smDR1-W6h4I2ggkFc_jjv3Mzon88rezv2kHnoYBvhpWfS-N9MSt8HtlM5kaxQpTxdNqghpWSqh7CeTb2RTVmK-TamuDKE5m12UvTpCCKIpB3hS3qTZHeOxc_Mlgx8G3MRaS0jsXJh5x6WgbC0HvRzbg9Ea0Xg/p.png?fv_content=true&size_mode=5);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color:#026E08 ;
   height: 350px;
   width: 100%;
   display:flex;
@@ -533,7 +538,6 @@ Knowledge Base
 .opendiv img{
   width: 100%;
   position: absolute;
-  z-index: 0;
 }
 
 .opendiv h1{
@@ -541,7 +545,7 @@ Knowledge Base
   font-size: 56px;
   align-items: center;
   margin-bottom: 2rem;
-  z-index: 1;
+ 
 }
 
 .opendiv input{
@@ -576,6 +580,7 @@ Knowledge Base
 }
 .card-title{
   font-weight: bold;
+  font-size: 16px;
 }
 
 .FAQs-div h1{
@@ -609,9 +614,10 @@ Knowledge Base
 @media screen and (max-width:450px) {
   .opendiv input{
     width: 90% !important;
+    height: auto;
   }
   .opendiv h1{
-    font-size: 35px;
+    font-size: 25px;
     margin-bottom: 0.5rem;
   }
   .opendiv{
@@ -622,6 +628,7 @@ Knowledge Base
     height: 50%;
     align-self: center;
   }
+
 }
 
 .btn-sign-up-kb{
